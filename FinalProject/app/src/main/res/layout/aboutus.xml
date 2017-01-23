@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/userName"
+        android:textSize="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:text="BILL BOOK 2.3.02.01"
+        />
+
+    <TextView
+        android:id="@+id/id8"
+        android:textSize="20dp"
+        android:layout_below="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:text="Copyright 2015-2016 Blue.Inc"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+
+        android:layout_below="@+id/id8"
+        android:paddingLeft="120dp"
+        android:text="All Rights Reserved"
+
+        />
+</LinearLayout>

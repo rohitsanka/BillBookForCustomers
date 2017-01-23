@@ -1,0 +1,108 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/addressIextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Address :"
+        android:textColor="@color/background_material_dark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addressDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressIextView"
+        android:layout_gravity="start"
+        android:paddingTop="5dp"
+        android:text="Bill Book\nUniversity Of Central Missouri\nChipman Road,Lee Summit, Missouri "
+        android:textColor="@color/background_material_dark"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addressDetails"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/addressDetails"
+        android:layout_toRightOf="@+id/addressDetails"
+        android:src="@drawable/googlemaps" />
+
+    <TextView
+        android:id="@+id/phone_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:text="To know more information about our products, feedback,suggestions or for any techincal support.We are available 24/7.\nPhone :816-716-9610"
+        android:textColor="@color/background_material_dark"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/addressDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/phone_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:src="@drawable/phone_symbol"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/addressDetails"
+        android:layout_toEndOf="@+id/addressDetails"
+        android:layout_alignBottom="@+id/phone_info"
+        android:layout_below="@+id/addressDetails" />
+
+
+    <TextView
+        android:id="@+id/email_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:text="Email your concerns or feedback or suggestions.\nThe Bill Book – email:\rxs4550@ucmo.edu\nBannu Sanka, Director – email: bannu@ucmo.edu"
+        android:textColor="@color/background_material_dark"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/email_contact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:layout_toLeftOf="@+id/email_contact"
+        android:layout_toStartOf="@+id/email_contact" />
+
+
+    <ImageView
+        android:id="@+id/email_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email_final"
+        android:layout_below="@+id/phone_contact"
+        android:layout_toRightOf="@+id/phone_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
